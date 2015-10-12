@@ -1,0 +1,25 @@
+html{
+	height: 100%;
+}
+
+body{
+	#gradient > .vertical(@body-bg-start, @body-bg-end);
+
+	padding: @padding-large-horizontal *4 @padding-large-vertical * 4;
+}
+
+main {
+	text-align: center;
+}
+
+.page-header{
+	h1{
+		font-size: 1.5em;
+	}
+}
+
+// Custom button variant
+.btn-pink {
+  .button-variant(@btn-pink-color; @btn-pink-bg; @btn-pink-border);
+  text-transform: uppercase;
+}

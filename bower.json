@@ -1,0 +1,33 @@
+{
+  "name": "mobile-app",
+  "version": "1.0.0",
+  "authors": [
+    "Craig Michael Thompson <craig@craigsworks.com>"
+  ],
+  "main": "index.js",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.5",
+    "jquery": "^1.9.1",
+    "modernizr": "^2.8.3",
+    "select2": "^4.0.0",
+    "html5shiv": "^3.7.3",
+    "respond": "^1.4.2",
+    "matchmedia": "^0.2.0"
+  },
+  "overrides": {
+    "modernizr": {
+      "dependencies": {
+        "html5shiv": "^3.7.3"
+      },
+      "main": "modernizr.js"
+    }
+  }
+}

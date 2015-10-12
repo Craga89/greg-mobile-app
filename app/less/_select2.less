@@ -1,0 +1,137 @@
+.select2-hidden-accessible{
+	.input-group &{
+		display: none;
+	}
+}
+
+.select2-container{
+	
+	.input-group > &{
+	    position: relative;
+	    z-index: 2;
+	    float: left;
+	    width: 100%;
+	    margin-bottom: 0;
+	}
+}
+
+
+.select2-container--app {
+	text-align: left;
+
+	border-bottom: 1px solid @text-color;
+
+	.select2-selection--single {
+		.select2-selection__rendered {
+			line-height: 28px;
+
+			.icon{
+				margin-right: 6px;
+			}
+		}
+
+		.select2-selection__clear {
+			cursor: pointer;
+			float: right;
+			font-weight: bold;
+		}
+
+		.select2-selection__arrow {
+			height: 26px;
+			position: absolute;
+			top: 1px;
+			right: 1px;
+			width: 20px;
+			b {
+				border-color: @text-color transparent transparent transparent;
+				border-style: solid;
+				border-width: 5px 4px 0 4px;
+				height: 0;
+				left: 50%;
+				margin-left: -4px;
+				margin-top: -2px;
+				position: absolute;
+				top: 50%;
+				width: 0;
+			}
+		}
+	}
+
+	.select2-dropdown{
+		background-color: @text-color;
+		color: @body-bg;
+
+		border-radius: 0;
+	}
+
+	.select2-search--dropdown {
+
+
+		.select2-search__field {
+			border: 1px solid #aaa;
+		}
+	}
+
+	.select2-search--inline {
+		.select2-search__field {
+			background: transparent;
+			border: none;
+			outline: 0;
+		}
+	}
+
+	.select2-results {
+		& > .select2-results__options {
+			max-height: 200px;
+			overflow-y: auto;
+		}
+	}
+
+	.select2-results__option[role=group] {
+		padding: 0;
+	}
+
+	.select2-results__option[aria-disabled=true] {
+		color: #999;
+	}
+
+	.select2-results__option[aria-selected=true] {
+		background-color: #ddd;
+	}
+
+	.select2-results__option--highlighted[aria-selected] {
+		background-color: #5897fb;
+		color: white;
+	}
+
+	.select2-results__group {
+		cursor: default;
+		display: block;
+		padding: 6px;
+	}
+}
+
+.select2-container--app.select2-container--disabled {
+	.select2-selection--single {
+		background-color: #eee;
+		cursor: default;
+
+		.select2-selection__clear {
+			display: none;
+		}
+	}
+
+	.select2-selection__choice__remove {
+		display: none;
+	}
+}
+.select2-container--app.select2-container--open {
+	.select2-selection--single {
+		.select2-selection__arrow {
+			b {
+				border-color: transparent transparent @text-color transparent;
+				border-width: 0 4px 5px 4px;
+			}
+		}
+	}
+}
