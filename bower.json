@@ -20,7 +20,9 @@
     "select2": "^4.0.0",
     "html5shiv": "^3.7.3",
     "respond": "^1.4.2",
-    "matchmedia": "^0.2.0"
+    "matchmedia": "^0.2.0",
+    "awesome-bootstrap-checkbox": "~0.3.5",
+    "font-awesome": "~4.4.0"
   },
   "overrides": {
     "modernizr": {

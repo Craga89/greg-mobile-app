@@ -4,15 +4,52 @@ html{
 
 body{
 	#gradient > .vertical(@body-bg-start, @body-bg-end);
-
-	padding: @padding-large-horizontal *4 @padding-large-vertical * 4;
 }
 
 main {
 	text-align: center;
+
+	margin-top: @padding-large-horizontal * 4;
+	padding: @padding-large-horizontal * 2 @padding-large-vertical * 4;
+}
+
+fieldset{
+	margin-top: 0;
+
+	.form-group:last-child{
+		margin-bottom: 0;
+	}
+}
+
+legend{
+	.clearfix;
+
+	margin-bottom: @padding-base-vertical;
+
+	border: 0;
+	text-align: left;
+	font-size: @font-size-base;
+}
+
+.form-control{
+	box-shadow: none;
+}
+
+.checkbox label{
+	padding-left: 8px;
+
+	&::before{
+		border-radius: @border-radius-base;
+	}
+}
+
+.btn{
+	border-radius: @border-radius-button;
 }
 
 .page-header{
+	margin-top: 0;
+
 	h1{
 		font-size: 1.5em;
 	}
