@@ -12,6 +12,7 @@ exports.config =
       defaultExtension: 'less'
       joinTo:
         'css/app.css': /^app/
+        'css/select.css': /select.less/
         'css/vendor.css': /^vendor/
       order:
         before: [
@@ -40,7 +41,7 @@ exports.config =
           'ie 8',
           'ie 9'
         ]),
-        require('csswring')
+        # require('csswring')
       ]
 
   # No CommonJS etc.
